@@ -1,0 +1,473 @@
+ムカついてきた, Muka tsuite kita, (I'm getting annoyed; I am getting annoyed)
+できるわけ, Dekiru wake, (the reason it can be done; that's why it's possible; the explanation for how it's done)
+お前なんだよ, Omae nandayo, (What the hell do you want; What's your problem)
+むかつく, Mukatsuku, (to feel irritated; to feel annoyed; to be pissed off)
+同意する, Douisuru, (to agree; to consent; to approve)
+同意しない, Douishinai, (do not agree; will not consent; disagree)
+出来る, Dekiru, to be able to do something
+だけ, Dake, (only; just; to the extent of)
+光, Hikari, (light; shine; gleam)
+上, Ue, (above; up; on top of)
+下, Shita, (below; under; down; bottom)
+あれ, Are, (Huh; Oh; that over there)
+もうわかる, Mou Wakaru, (I already understand; I get it now)
+絶対, Zettai, Absolutely
+誰, Dare, who
+よし, Yoshi, (all right; okay)
+ナイス, Naisu, (nice; good; well done)
+真似して, Maneshite, (imitating; copying; impersonating)
+知らないよ, Shiranai yo, (I don't know; I have no idea)
+どこ, Doko, where
+<Name> wa ogenki desu ka?, 
+初めまして, Hajimemashite, Nice to meet you    
+お箸, ohashi, chopsticks
+よく　できました。, Yoku dekimashita, Well done
+まだ, mada, (Still; yet)
+私も元気です, Watashi mo genki desu; I am well too
+翔, sho, soar
+緑, midori, green
+今晩, konban, (evening; this evening)
+電気, denki, (electricity;light)
+冬, fuyu, Winter
+橋, haSHI, bridge
+学校, gakkou, school
+紙, kaMI, paper
+恋愛, renai, romance
+雨, ame, rain
+好き, suki, like
+少し, sukoshi, (a little; a bit)
+北, kita, north
+南, minami, south
+東, higashi, east
+西, nishi, west
+アフリカ, Afurika, africa
+アジア, ajia, asia
+ヨーロッパ, Yorropa
+北アメリカ, Kita Amerika, North America
+オーストララシア, Ōsutorarashia, Australasia
+南アメリカ, Minami Amerika, South America
+イギリス, igirisu, (England, UK)
+スペイン, supein, spain
+フランス, furansu, france
+台湾, taiwan, taiwan
+フィリピン, firipin, Phillipines
+国, kuni, country
+外国, gaikoku, foreign country
+アメリカ, Amerika, America
+オーストラリア, Ōsutoraria, Australia
+カナダ, Kanada, Canada
+メキシコ, Mekishiko, Mexico
+韓国, Kankoku, South Korea
+中国, Chūgoku, China
+日本, nihon, Japan
+トルコ, toruko, Turkey
+ブラジル, burajiru, Brazil
+米国, Beikoku, (USA; United States of America)
+旅行, ryokō, (trip; travel; vacation)
+飛行機, hikōki, (plane; airplane)
+空港, kūkō, (airport)
+飛ぶ, tobu, (to fly; to jump; to rush)
+荷物, nimotsu, (luggage; baggage; package)
+パスポート, pasupōto, passport
+切符, kippu, ticket
+カメラ, kamera, camera
+観光する, kankō suru, to sightsee
+観光地, kankōchi, (tourist attraction; sightseeing area)
+地図, chizu, map
+お寺, otera, temple
+神社, jinja, shrine
+古い, furui, old
+葉書, hagaki, postcard
+切手, kitte, stamp
+意味, imi, meaning
+言葉, kotoba, (language; word; speech)
+言語, gengo, language
+外国人, gaikokujin, foreigner
+界隈, kaiwai, (area; users; fandom)
+ティペット, tipetto, Tippett
+デイヴィッド, deividdo, David
+初めて, hajimete, (for the first time; first time)
+正解, seikai, correct
+何, nani, what
+いつ, itsu, when
+素晴らしい, subarashī, wonderful
+ペン, pen, pen
+鞄, kaban, (bag; handbag; backpack)
+本, hon, book
+すみません, sumimasen, (excuse me; sorry)
+またね, mata ne, see you later
+じゃあまた, Jā mata, see you later
+名前, namae, name
+宜しくお願いします, yoroshiku onegaishimasu, nice to meet you
+から, kara, from
+来ました, kimashita, (came; came from)
+カナダから来ました, kanada kara kimashita, (I am from Canada; I came from Canada)
+カナダ人, kanada-jin, (Canadian, Canadian-person)
+どこから来ましたか, Doko kara kimashita ka, Where are you from
+何人ですか, nani-jin desu ka, (what nationality are you, what is your nationality)
+準備はいいですか, junbi wa ii desu ka, (Are you ready; Are ready)
+来ます, kimasu, (come; arrive)
+イングランド, ingurando, england
+スコットランド, sukottorando, scotland
+お疲れ様でした. otsukaresama deshita, great work
+趣味, shumi, hobby
+水泳, suiei, swimming <noun>
+料理, Ryōri, cooking <noun>
+どうして, Dōshite, why
+下手, heta, bad at
+聞いて, Kīte, (listen, hear, ask)
+泳ぎます, oyogimasu, swimming <verb>
+サッカー, sakkā, soccer
+買い物, kaimono, shopping <verb>
+映画, eiga, movie
+りんご, ringo, apple
+料理します, ryōri shimasu, cook <verb> 
+なぜ, naze, why <very polite>
+なんで, nande, why <casual>
+上手, jōzu, (good at; skillful)
+素晴らしい, Subarashī, wonderful
+これ, kore, this <thing>
+どうして好きじゃないんですか, Dōshite suki janai n desu ka, Why don't <you> like it
+聞いてみましょう, Kīte mimashō, Let’s try listening
+趣味は何ですか, shumi wa nan desu ka, What are <your> hobbies
+料理が好きですか, Ryōri ga suki desu ka, Do <you> like cooking?
+私も水泳が好きです, Watashi mo suiei ga suki desu, I like swimming too
+これは何ですか, Kore wa nan desu ka, what is this
+どうして好きじゃないんですか, Dōshite suki janai n desu ka, Why don't <you> like it
+美味しい, oshii, (tasty; delicious)
+先生, sensei, (teacher, master)
+可愛い, kawaii, (cute, lovable)
+美しい, utsukushī, beautiful
+学生, gakusei, student
+猫, neko, cat
+大好き, daisuki, (really like; love)
+車, kuruma, car
+コーヒー, kōhī, coffee
+嫌い, kirai, hate
+チョコレート, chokorēto, chocolate
+お兄さん, onīsan, older brother
+お母さん, okāsan, (mother;mom)
+スポーツ, supōtsu, sports
+甘い, amai, sweet
+チョコレートが好きです。甘いです。, Chokorēto ga suki desu. Amai desu.
+楽しい, tanoshī, fun
+面白い, omoshiroi, (interesting; funny)
+日本語, nihongo, Japanese <language>
+お父さん, otōsan, dad
+頂きます, itadakimasu, (let's eat;qqq I humbly receive)
+御馳走様でした!, gochisōsama deshita!, Thank you for the meal!
+誰, dare, who
+優しい, yasashī, kind
+苦い, nigai, bitter
+暑い, atsui, hot <weather or temperature>
+この, kono, this 
+話, hanashi, (talk; story)
+背, se, height
+高い, takai, (tall; high; expensive)
+目, me, eye
+青い, aoi, blue <colored>
+髪の毛, kaminoke, hair <on the head>
+長い, nagai, long
+お邪魔します, ojama shimasu, <I will disturb you; entering home>
+失礼します, shitsurie shimasu, excuse me
+玄関, genkan, house entrance
+畳, tatami, tatami
+見えない, mienai, (cannot see; can't see; invisible; hidden)
+愛, ai, love
+言う, iu, to say
+会う, au, to meet
+家, ie, house
+上, ue, (up; on <top of>)
+ええ, ē, (yes; yeah)
+青, ao, blue <the color>
+赤, aka, red <the color>
+駅, eki, train station
+秋, aki, fall <season>
+行く, iku, to go
+聞く, kiku, (to listen; to hear; to ask)
+池, ike, pond
+ここ, koko, here
+こうこう, kōkō, high school
+鍵, kagi, (key; lock)
+家具, kagu, furniture
+影, kage, shadow
+英語, eigo, English <language>
+在庫, zaiko, (stock; inventory)
+朝, asa, morning
+酒, sake, (sake; alcohol)
+さあ, sā, (well now; well)
+景色, keshiki, scenery
+準備はいい, junbi wa ii, (Are you ready)
+まだまだです, mada mada desu, (not yet; still a long way to go; not good enough)
+話せます, hanasemasu, can speak
+もうちょっと, mō chotto, a little more
+食べています, tabete imasu, eating
+りんごを食べています, Ringo o tabete imasu, eating an apple
+水, mizu, water
+飲んでいます, nonde imasu, drinking
+〜ヶ月, ~kagetsu, counter for months
+もう少しゆっくりお願いします, Mō sukoshi yukkuri onegaishimasu, A little more slowly please
+火事, kaji, fire
+静か, shizuka, quiet
+涼しい, suzushī, (cool <temperature>; refreshing)
+差す, sasu, to put up <an umbrella>
+貸す, kasu, to lend
+風邪, kaze, cold <sickness>, flu
+そう, sō, (that's right; really)
+家族, kazoku, family
+明日, ashita, tomorrow
+大学, daigaku, (university; college)
+歌, uta, song
+一, ichi, one
+七, shichi, seven
+立つ, tatsu, to stand <up>
+着く, tsuku, to arrive
+(続く,つづく), tsuzuku, to continue
+雑誌, zasshi, magazine
+手, te, hand
+素敵, suteki, (lovely; wonderful)
+縦, tate, (height; length)
+出口, deguchi, <an> exit
+後, ato, (after, later)
+時々, tokidoki, sometimes
+負けたくない), maketakunai, (I don't want to lose; I won't lose)
+選手, senshu, athlete, player
+勉強しています, Benkyou shite imasu, (I am studying; I have been studying)
+(一ヶ月;１ヶ月), ikkagetsu, 1 month
+間, kan, (suffix for periods of time; interval; between)
+聞きましょう, kikimasho, (shall we listen; let's listen; let's ask; shall we ask)
+暖かい, atatakai, warm
+食べ物, tabemono, food
+飲み物, nomimono, drink
+好きな飲み物, suki na nomimono, the drink <I> like
+好きな食べ物, suki na tabemono, the food <I> like
+本はあります, hon wa arimasu, <I> have a book
+います, imasu, (have; there is; exist) <animate>
+犬, inu, dog
+いくらですか, ikura desu ka, how much is it
+お釣り, otsuri, change
+はい、コーヒーとお茶があります, Hai, kōhī to ocha ga arimasu, Yes, <we> have coffee and green tea
+お茶, ocha, tea
+魚, sakana, fish
+二, ni, two
+子犬, koinu, puppy
+もうさあ, mou saa, (Enough already; Seriously; Come on) <frustration>
+壁ドン, kabedon, wall slam
+図書館, toshokan, library
+映画館, eigakan, movie theater
+2時, ni-ji, two o'clock
+明後日, asatte, the day after tomorrow
+会います, aimasu, meet
+11時, jūichi-ji, eleven o'clock
+行きます, ikimasu, go
+大丈夫, daijōbu, (okay, fine, all right, no problem)
+楽しみにしています, tanoshimi ni shite imasu, looking forward to it
+10時はどうですか, Jū-ji wa dō desu ka, How about ten o’clock
+お金, okane, money
+その, sono, that
+あのう, anō, um
+えーと, eto, (let's see; uh; um)
+大阪, Ōsaka, Osaka
+今日, kyō, today
+よかったら, yokattara, (if you like; if you don't mind)
+一緒に, issho ni, (together; with)
+予定, yotei, (plans; schedule)
+奈良, nara, nara
+十一, juuichi, (eleven; 11)
+奈良はどうやって行きますか, Nara wa dōyatte ikimasu ka, How do <I> get to Nara
+どうやって, dōyatte, (how, in what way, by what means)
+電車, densha, train
+遠い, tōi, far
+京都駅, Kyōto-eki, Kyoto Station
+あそこ, asoko, over there
+バス, basu, bus
+自転車, jitensha, bicycle
+歩きます, arukimasu, walk <action>
+歩いて行きます, aruite ikimasu, <You> go <by> walking
+近い, chikai, (close; near)
+くらい, kurai, (approximately; about)
+銀行, ginkō, bank
+コンビニ, konbini, convenience store
+そこ, soko, there
+発音, hatsuon, pronunciation
+まだいいよ, mada ii yo, (Not yet; it's not needed yet; it's fine) 
+運命, unmei, (fate; destiny)
+開けます/あけます, akemasu, (to open, to open for business)
+どっち, docchi, (which way <choosing between two directions>, which one <choosing between two options> ) 
+太陽/たいよう, taiyo, sun
+逃げる, nigeru, (to escape; to run away; to flee; to avoid)
+溺れない, oborenai, (will not sink; do not drown; not get addicted)
+大きい, ookii, (big; large; loud)
+いいね, ii ne, (sounds good; that's nice; good idea; good, isn't it)
+めちゃくちゃ, mechakucha, (absurd; reckless; chaotic)
+大事だから, daiji dakara, (because it is important; so therefore it is important
+向きじゃない, muki ja nai, (not suitable for; not meant for; not intended for)
+溺れる, oboreru, (to drown; to sink; to struggle in water)
+なんか, nanka, (somehow; kind of; like)
+飛び跳ねる, Tobihaneru, (to jump up and down; to hop; to leap; to skip)
+要らない, iranai, (don't need it; I don't want it; no thanks)
+御洒落, oshare, (smartly dressed; stylish)
+まま で, mama de, (while remaining in a state of; as it is)
+今, ima, (now; the present time; just now)
+戻ります, modorimasu, (to return; to go back; to turn back)
+Nakunatta, nakunatta, (disappeared, run out, got lost, died)
+生きた, ikita, (lived, alive, living)
+逃げろ, nigero, run away
+来ないで, konaide, (don't come; don't approach; keep away)
+仕舞った, shimatta, (damn it; shoot; oops)
+落ちた, ochita, (fell; dropped; failed)
+行ける, ikeru, (can go; be able to go; doable; possible)
+押された脱兎, Osareta Datto, (a hare forced to flee, pressured to escape quickly)
+八日, yōka, 8th <of the month>
+一つ, hitotsu, <native japanese number> one
+三つ, mittsu, (native Japanese number) three
+でかい, dekai, (huge; giant; enormous; massive)
+カサカサ, kasa kasa, (rustling sound, rough texture)
+足りない, tarinai, (insufficient; not enough; lacking)
+速い, hayai, (fast; quick)
+翔んでる, tonderu, (fly; soar)
+六日, muika, 6th <of the month>
+五日, itsuka, 5th <of the month>
+五つ, itsutsu, <native japanese number> five
+パン, pan, bread
+一日, tsuitachi, 1st <of the month>
+八つ, yattsu, <native Japanese number> eight
+四つ, yottsu, <native Japanese number> four
+二日, futsuka, 2nd <of the month>
+二つ, futatsu, <native Japanese number> two
+三日, mikka, 3rd <of the month>
+七日, nanoka, 7th <of the month>
+1歳, issai, one year old
+8歳, hassai, eight years old
+四日, yokka, 4th <of the month>
+十日, tōka, 10th <of the month>
+十, tō, (native Japanese number) ten
+ゼロ, zero, zero
+20歳, hatachi, 20 years old
+六つ, muttsu, <native Japanese number> six
+10歳, jussai, ten years old
+九日, kokonoka, 9th <of the month>
+七つ, nanatsu, <native Japanese number> seven
+なんか, nanka, (somehow; kind of; like; something; for some reason)
+二回, nikai, second floor
+羽, hane, (feather; wing; plume)
+童, warabe, (child; children)
+毎回, maikai, (every time; each time; each round)
+どうすんなこれ, dousuna kore, (how can I handle this; what am I supposed to do with this)
+やってみる, yatte miru, (to try; to give it a go; to have a try)
+絶対やだ, zettai yada, (absolutely not; I definitely don't want to; no way)
+戻りたくない, modoritakunai, (I do not want to return; I don't want to go back)
+ぐらい, gurai, (approximately; about; to the extent that)
+分, fun, counter for minutes
+惜しい, oshii, (regrettable; disappointing; too good to waste; close)
+頃, goro, about <specific point in time>
+午後, gogo, (afternoon; PM)
+午前, gozen, (morning; AM)
+仕事, shigoto, (work; job)
+家, ie, (house; home)
+今, ima, (now; current)
+2時間, ni-jikan, 2 hours long
+7時, shichi-ji, seven o'clock
+1分, ippun, one minute
+4分, (yon-pun; yon-pun), four minutes
+半, han, (counter for half-past the hour; half)
+3分, sanpun, 3 minutes
+10分, juppun, 10 minutes
+8分, happun, 8 minutes
+家から駅まで何分ですか, Ie kara eki made nan-pun desu ka, How many minutes is it from the house to the train station
+7分, nana-fun, seven minutes
+くらい, kurai, (approximately; about) <amounts of time, money, or distance>
+4時, yo-ji, four o'clock
+走る, Hashiru, running
+おなら, onara, (fart; passing gas)
+器用貧乏, kiyōbinbō, (jack of all trades and master of none)
+4ヶ月間, yonkagetsu-kan, four month period
+6ヶ月間, rokkagetsu-kan, six month period
+9時, ku-ji, nine o'clock
+9分, kyū-fun, nine minutes
+10ヶ月間, jukkagetsu kan, 10 month period
+1時頃, ichi-ji goro, about one o'clock
+笑う, warau, (to laugh; lol; haha)
+出てくる, detekuru, (to come out; to appear; to emerge; to turn up)
+扉, tobira, (door; gate; opening)
+よいしょ, yoisho, (oof; heave-ho) <used when lifting heavy objects>
+面倒くさい, mendokusai, (bothersome; troublesome; a pain)
+きつい, kitsui, (tough; hard; tight; intense)
+きつかった, kitsukatta, (it was tough; it was hard; it was intense; it was severe)
+された, sareta, (was done; has been done; did)
+戦車, sensha, tank
+まじ, maji, (seriously; really; for real)
+ハイタッチ, haitacchi, (high five; high touch)
+さびしい, sabishii, (lonely; lonesome; solitary; desolate)
+さみしい, samishii, (lonely; lonesome; solitary; desolate)
+モグモグ, mogu mogu, sound of (eating; chewing; munching; eating heartily)
+進んだ, susunda, (progressed; improved; developed; moved forward)
+貰って, moratte, to (receive; take; get)
+亀, kame, (turtle; tortoise)
+なんだ今のは, Nanda ima no wa, (What was that; What was that just now)
+どこ見てんだよ, Doko mitendayo, (where are you looking; what are you looking at)
+落ち込んでる, ochikonderu, (I'm feeling down; I'm depressed; I'm feeling low)
+閉じ込め, tojikome, (to lock up, shut in, imprison)
+仲間, nakama, (comrade; close friend; colleague; teammate; companion)
+助かった, tasukatta, (to be helped; to survive; to be saved; to escape harm)
+ゴールテープ, gōrutēpu, (goal tape; finish line)
+二次会, nijikai, (after party; second party)
+やられた, Yarareta 
+たたかい, tatakai, battle
+最悪, saiaku, (the worst; lowest; terrible)
+覚えました, oboemashita, (memorized; learned; remembered; committed to memory)
+分かった, wakatta, (understood; got it) <informal>
+鬼畜ゲー, kichiku gē, brutal game
+食べます, tabemasu, eat
+飲みます, nomimasu, drink
+見ます, mimasu, (see; look; watch)
+寝ます, nemasu, (sleep; lie down)
+します, shimasu, (do; play)
+行きません, ikimasen, not go
+食べません, tabemasen, not eat
+飲みません, nomimasen, not drink
+見ません, mimasen, (not see; not look; not watch)
+寝ません, nemasen, not sleep
+しません, shimasen, (not do; not play)
+オレンジジュース, orenji-jūsu, orange juice
+野球, yakyū, baseball
+野球をします, Yakyū o shimasu, play baseball
+テレビ, terebi, (TV, television)
+魚, sakana, fish
+愛情, aijou, (love; affection; tenderness)
+弾きます, hikimasu, play <a stringed or keyboard instrument>
+ピアノ, piano, piano
+読みます, yomimasu, read
+出ます, demasu, (leave; appear)
+家を出ます, ie o demasu, <I> will leave the house
+降ります, orimasu, (get off; disembark)
+休みます, yasumimasu, (rest; have a break; be absent; take a day off)
+仕事を休みません, Shigoto o yasumimasen, <I> will not take a day off work
+戻れない, Modorenai, (cannot go back; cannot return) 
+できた, dekita, (it's done; I finished it; it's ready)
+シンクロナイズドスイミング, Shinkuronaizudo suimingu, synchronized swimming
+あおり, aori, (taunt; provocation)
+幼馴染, osananajimi, childhood friend
+勉強, benkyō, studying
+紅茶, kōcha, black tea
+良い, ī, good
+不便, fuben, inconvenient
+彼氏, kareshi, boyfriend
+友達, tomodachi, friend
+テーブル, tēburu, table
+置きます, okimasu, (put; place)
+入れます, iremasu, put in
+乗ります, norimasu, (ride; catch)
+電話します, denwa shimasu, (call; phone)
+来週, raishū, next week
+上司, jōshi, boss
+話します, hanashimasu, (talk; speak)
+水曜日, Suiyōbi, Wednesday
+着きます, tsukimasu, arrive
+起きます, okimasu, (wake up; get up)
+練習, renshū, practice <noun>
+練習します, renshū shimasu, practice <verb>
+可愛すぎる, kawaisugiru, (too cute; so cute; adorable)
+説, setsu, (theory; opinion; rumor)
+バグった, bagutta, (to act up; to behave buggily <of software>; to behave strangely)
+恋愛宣言, renai sengen, (love confession; love declaration)
