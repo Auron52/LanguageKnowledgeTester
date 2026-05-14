@@ -6,26 +6,26 @@ public class InputFileParser
 {
     public List<Mapping> Parse(string filePath)
     {
-        var mappings = new List<Mapping>();
+        List<Mapping> mappings = new List<Mapping>();
 
         foreach (var line in File.ReadLines(filePath))
         {
-            var trimmed = line.Trim();
+            string trimmed = line.Trim();
             if (string.IsNullOrWhiteSpace(trimmed)) continue;
 
-            var parts = SplitLineIntoThree(trimmed);
+            string[] parts = SplitLineIntoThree(trimmed);
 
-            var otherLang = parts.Length > 0 ? parts[0].Trim() : null;
-            var pronunciationRaw = parts.Length > 1 ? parts[1].Trim() : null;
-            var userLangRaw = parts.Length > 2 ? parts[2].Trim() : null;
+            string? otherLang = parts.Length > 0 ? parts[0].Trim() : null;
+            string? pronunciationRaw = parts.Length > 1 ? parts[1].Trim() : null;
+            string? userLangRaw = parts.Length > 2 ? parts[2].Trim() : null;
 
             if (string.IsNullOrWhiteSpace(otherLang)) continue;
 
-            var pronunciationAnswers = ParseAnswers(pronunciationRaw);
-            var userLangAnswers = ParseAnswers(userLangRaw);
+            List<string> pronunciationAnswers = ParseAnswers(pronunciationRaw);
+            List<string> userLangAnswers = ParseAnswers(userLangRaw);
 
             // Use the first pronunciation form as the prompt; accept all forms as answers
-            var pronunciationPrompt = pronunciationAnswers.FirstOrDefault();
+            string? pronunciationPrompt = pronunciationAnswers.FirstOrDefault();
 
             // a. Other Language -> User's Language
             if (userLangAnswers.Count > 0)
@@ -60,8 +60,8 @@ public class InputFileParser
     // Splits a line on commas, respecting parentheses, into at most 3 parts.
     private static string[] SplitLineIntoThree(string line)
     {
-        var parts = new List<string>();
-        var current = new System.Text.StringBuilder();
+        List<string> parts = new List<string>();
+        System.Text.StringBuilder current = new System.Text.StringBuilder();
         int depth = 0;
 
         foreach (var c in line)
