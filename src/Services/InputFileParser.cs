@@ -11,7 +11,10 @@ public class InputFileParser
         foreach (var line in File.ReadLines(filePath))
         {
             string trimmed = line.Trim();
-            if (string.IsNullOrWhiteSpace(trimmed)) continue;
+            if (string.IsNullOrWhiteSpace(trimmed))
+            {
+                continue;
+            }
 
             string[] parts = SplitLineIntoThree(trimmed);
 
@@ -19,7 +22,10 @@ public class InputFileParser
             string? pronunciationRaw = parts.Length > 1 ? parts[1].Trim() : null;
             string? userLangRaw = parts.Length > 2 ? parts[2].Trim() : null;
 
-            if (string.IsNullOrWhiteSpace(otherLang)) continue;
+            if (string.IsNullOrWhiteSpace(otherLang))
+            {
+                continue;
+            }
 
             List<string> pronunciationAnswers = ParseAnswers(pronunciationRaw);
             List<string> userLangAnswers = ParseAnswers(userLangRaw);
@@ -29,29 +35,45 @@ public class InputFileParser
 
             // a. Other Language -> User's Language
             if (userLangAnswers.Count > 0)
+            {
                 mappings.Add(Make(MappingType.OtherToUser, otherLang, userLangAnswers));
+            }
 
             // b. User's Language -> Other Language (one mapping per meaning)
             if (userLangAnswers.Count > 0)
+            {
                 foreach (var meaning in userLangAnswers)
+                {
                     mappings.Add(Make(MappingType.UserToOther, meaning, [otherLang]));
+                }
+            }
 
             // c. Pronunciation -> Other Language
             if (pronunciationPrompt != null)
+            {
                 mappings.Add(Make(MappingType.PronunciationToOther, pronunciationPrompt, [otherLang]));
+            }
 
             // d. Pronunciation -> User's Language
             if (pronunciationPrompt != null && userLangAnswers.Count > 0)
+            {
                 mappings.Add(Make(MappingType.PronunciationToUser, pronunciationPrompt, userLangAnswers));
+            }
 
             // e. Other Language -> Pronunciation
             if (pronunciationAnswers.Count > 0)
+            {
                 mappings.Add(Make(MappingType.OtherToPronunciation, otherLang, pronunciationAnswers));
+            }
 
             // f. User's Language -> Pronunciation (one mapping per meaning)
             if (pronunciationAnswers.Count > 0 && userLangAnswers.Count > 0)
+            {
                 foreach (var meaning in userLangAnswers)
+                {
                     mappings.Add(Make(MappingType.UserToPronunciation, meaning, pronunciationAnswers));
+                }
+            }
         }
 
         return mappings;
@@ -72,8 +94,14 @@ public class InputFileParser
                 continue;
             }
 
-            if (c == '(') depth++;
-            else if (c == ')') depth = Math.Max(0, depth - 1);
+            if (c == '(')
+            {
+                depth++;
+            }
+            else if (c == ')')
+            {
+                depth = Math.Max(0, depth - 1);
+            }
 
             if (c == ',' && depth == 0)
             {
@@ -93,12 +121,17 @@ public class InputFileParser
     // Parses a field that may contain multiple answers: "(ans1; ans2)" or "single answer".
     private static List<string> ParseAnswers(string? raw)
     {
-        if (string.IsNullOrWhiteSpace(raw)) return [];
+        if (string.IsNullOrWhiteSpace(raw))
+        {
+            return [];
+        }
 
         raw = raw.Trim();
 
         if (raw.StartsWith('(') && raw.EndsWith(')'))
+        {
             raw = raw[1..^1];
+        }
 
         return raw.Split(';')
                   .Select(a => a.Trim())
