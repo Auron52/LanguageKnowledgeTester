@@ -1,0 +1,30 @@
+Create a C# (+ .NET MAUI / Avalonia?) GUI application with the intention to support cross-platform desktop platforms.
+The purpose of the GUI is to test the users knowledge of a specific set of words or phrases in another language.
+
+The input file should generally be formatted in semi-csv format:
+<other language word/phrase>, <other language pronunciation word/phrase>, <users language word/phrase>
+If there are multiple meanings etc. then they should be surrounded by () and separated by ;
+Text in <> is used to give implied parts of the sentence or indicate additional information needed to work out the translation. When translating these it should not be necessary to specify.
+You can see a Japanese input example under Test/ExampleInputs/JapanesePhrases.txt (though it is possible this is not 100% correctly formatted) Pronunciation in this example is done using romanji, which emcompasses most of the required sounds.
+
+For now the user's language can be english only, but should be designed with the intention to support other user languages in the future.
+
+The program should:
+1. Read existing mappings from program database/storage.
+2. Read in and parse the input file
+3. Create appropriate multidirectional mappings between each entry in the input file and merge with existing mappings. The mappings are specified below:
+a. Other Language -> User's Language
+b. User's Language -> Other Language
+c. Pronunciation -> Other Language
+d. Pronunciation -> User's language
+e. Other Language -> Pronunciation
+f. User's language -> Pronunciation
+
+3. Randomly ask questions on each of these mappings, excluding the last 10 questions asked, so they are not repetitive.
+4. If the user gets the correct answer reduce the frequency of that question a little. For example reducing the odds by 10% of the default each time, to a minimum of 10%.
+5. Allow the user to specify that the question was very easy for them after answering correctly and, if so, reduce the frequency significantly, (e.g. to 10% of the default) so it shows up very rarely. If they do this when the question is at 10% of the default the question should stop being asked at all. (frequency set to 0) Later we may add an option to rehash these when the user wants a refresher.
+6. Persist the mappings to disk in program database/storage, so the frequencies can be maintained.
+
+
+A priority in this generation should be simplicity of the logic so it can be easily reviewed.
+

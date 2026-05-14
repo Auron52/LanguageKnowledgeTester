@@ -260,7 +260,7 @@
 会います, aimasu, meet
 11時, jūichi-ji, eleven o'clock
 行きます, ikimasu, go
-大丈夫, daijōbu, (okay, fine, all right, no problem)
+大丈夫, daijōbu, (okay; fine; all right; no problem)
 楽しみにしています, tanoshimi ni shite imasu, looking forward to it
 10時はどうですか, Jū-ji wa dō desu ka, How about ten o’clock
 お金, okane, money
@@ -275,7 +275,7 @@
 奈良, nara, nara
 十一, juuichi, (eleven; 11)
 奈良はどうやって行きますか, Nara wa dōyatte ikimasu ka, How do <I> get to Nara
-どうやって, dōyatte, (how, in what way, by what means)
+どうやって, dōyatte, (how, in what way; by what means)
 電車, densha, train
 遠い, tōi, far
 京都駅, Kyōto-eki, Kyoto Station
@@ -292,8 +292,8 @@
 発音, hatsuon, pronunciation
 まだいいよ, mada ii yo, (Not yet; it's not needed yet; it's fine) 
 運命, unmei, (fate; destiny)
-開けます/あけます, akemasu, (to open, to open for business)
-どっち, docchi, (which way <choosing between two directions>, which one <choosing between two options> ) 
+開けます/あけます, akemasu, (to open; to open for business)
+どっち, docchi, (which way <choosing between two directions>; which one <choosing between two options> ) 
 太陽/たいよう, taiyo, sun
 逃げる, nigeru, (to escape; to run away; to flee; to avoid)
 溺れない, oborenai, (will not sink; do not drown; not get addicted)
@@ -310,14 +310,14 @@
 まま で, mama de, (while remaining in a state of; as it is)
 今, ima, (now; the present time; just now)
 戻ります, modorimasu, (to return; to go back; to turn back)
-Nakunatta, nakunatta, (disappeared, run out, got lost, died)
+Nakunatta, nakunatta, (disappeared; run out; got lost; died)
 生きた, ikita, (lived, alive, living)
 逃げろ, nigero, run away
 来ないで, konaide, (don't come; don't approach; keep away)
 仕舞った, shimatta, (damn it; shoot; oops)
 落ちた, ochita, (fell; dropped; failed)
 行ける, ikeru, (can go; be able to go; doable; possible)
-押された脱兎, Osareta Datto, (a hare forced to flee, pressured to escape quickly)
+押された脱兎, Osareta Datto, (a hare forced to flee; pressured to escape quickly)
 八日, yōka, 8th <of the month>
 一つ, hitotsu, <native japanese number> one
 三つ, mittsu, (native Japanese number) three
