@@ -12,7 +12,10 @@ public class DatabaseService
 
     public Database Load()
     {
-        if (!File.Exists(_dbPath)) return new Database();
+        if (!File.Exists(_dbPath))
+        {
+            return new Database();
+        }
         try
         {
             var json = File.ReadAllText(_dbPath);
@@ -40,9 +43,13 @@ public class DatabaseService
                 m.Type == incoming.Type && m.Prompt == incoming.Prompt);
 
             if (match != null)
+            {
                 match.Answers = incoming.Answers; // refresh answers, preserve frequency
+            }
             else
+            {
                 existing.Mappings.Add(incoming);
+            }
         }
     }
 }

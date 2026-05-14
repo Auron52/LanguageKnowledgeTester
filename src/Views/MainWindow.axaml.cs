@@ -55,10 +55,15 @@ public partial class MainWindow : Window
     // Enter submits when unanswered, advances when answered
     private void Window_KeyDown(object? sender, KeyEventArgs e)
     {
-        if (e.Key != Key.Enter) return;
+        if (e.Key != Key.Enter)
+        {
+            return;
+        }
 
         if (_vm.CanSubmit)
+        {
             _vm.SubmitAnswer();
+        }
         else if (_vm.CanNext)
         {
             _vm.NextQuestion();

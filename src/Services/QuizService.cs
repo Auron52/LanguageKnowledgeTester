@@ -20,9 +20,14 @@ public class QuizService
             .ToList();
 
         if (candidates.Count == 0)
+        {
             candidates = db.Mappings.Where(m => m.FrequencyMultiplier > 0).ToList();
+        }
 
-        if (candidates.Count == 0) return null;
+        if (candidates.Count == 0)
+        {
+            return null;
+        }
 
         // Weighted random selection based on FrequencyMultiplier
         double totalWeight = candidates.Sum(m => m.FrequencyMultiplier);
@@ -32,7 +37,10 @@ public class QuizService
         foreach (var mapping in candidates)
         {
             cumulative += mapping.FrequencyMultiplier;
-            if (roll <= cumulative) return mapping;
+            if (roll <= cumulative)
+            {
+                return mapping;
+            }
         }
 
         return candidates[^1];
@@ -42,7 +50,9 @@ public class QuizService
     {
         db.RecentlyAskedIds.Add(mapping.Id);
         while (db.RecentlyAskedIds.Count > RecentlyAskedLimit)
+        {
             db.RecentlyAskedIds.RemoveAt(0);
+        }
     }
 
     public bool CheckAnswer(Mapping mapping, string userAnswer)
@@ -64,9 +74,13 @@ public class QuizService
     public void RecordVeryEasy(Mapping mapping)
     {
         if (mapping.FrequencyMultiplier <= MinFrequency)
+        {
             mapping.FrequencyMultiplier = 0.0;
+        }
         else
+        {
             mapping.FrequencyMultiplier = VeryEasyFrequency;
+        }
     }
 
     // Strip <implied context>, collapse whitespace, lowercase for comparison.

@@ -114,7 +114,10 @@ public class MainViewModel : INotifyPropertyChanged
 
     public void SubmitAnswer()
     {
-        if (_currentQuestion == null || QuestionAnswered) return;
+        if (_currentQuestion == null || QuestionAnswered)
+        {
+            return;
+        }
 
         bool correct = _quizService.CheckAnswer(_currentQuestion, UserAnswer);
         _lastAnswerWasCorrect = correct;
@@ -138,7 +141,10 @@ public class MainViewModel : INotifyPropertyChanged
 
     public void MarkVeryEasy()
     {
-        if (_currentQuestion == null || !_lastAnswerWasCorrect) return;
+        if (_currentQuestion == null || !_lastAnswerWasCorrect)
+        {
+            return;
+        }
 
         bool wasAtMinimum = _currentQuestion.FrequencyMultiplier <= 0.1;
         _quizService.RecordVeryEasy(_currentQuestion);
