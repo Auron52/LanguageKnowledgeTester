@@ -1,0 +1,62 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="LanguageKnowledgeTester.Views.MainWindow"
+        Title="Language Knowledge Tester"
+        Width="680" Height="460"
+        MinWidth="480" MinHeight="360"
+        KeyDown="Window_KeyDown">
+
+    <DockPanel>
+
+        <!-- Toolbar -->
+        <Border DockPanel.Dock="Top"
+                Padding="12,8"
+                BorderThickness="0,0,0,1"
+                BorderBrush="{DynamicResource SystemControlForegroundBaseMediumLowBrush}">
+            <StackPanel Orientation="Horizontal" Spacing="8">
+                <Button Content="Load Input File" Click="LoadInputFile_Click" />
+            </StackPanel>
+        </Border>
+
+        <!-- Main quiz area -->
+        <StackPanel Margin="36,24,36,24" Spacing="14">
+
+            <!-- Question type label -->
+            <TextBlock Text="{Binding QuestionTypeLabel}"
+                       FontSize="12"
+                       Opacity="0.55" />
+
+            <!-- Question prompt -->
+            <TextBlock Text="{Binding QuestionPrompt}"
+                       FontSize="28"
+                       FontWeight="SemiBold"
+                       TextWrapping="Wrap" />
+
+            <!-- Answer input -->
+            <TextBox x:Name="AnswerBox"
+                     Text="{Binding UserAnswer}"
+                     Watermark="Type your answer here..."
+                     IsEnabled="{Binding CanSubmit}"
+                     Margin="0,6,0,0" />
+
+            <!-- Action buttons -->
+            <StackPanel Orientation="Horizontal" Spacing="8">
+                <Button Content="Submit"
+                        Click="Submit_Click"
+                        IsEnabled="{Binding CanSubmit}" />
+                <Button Content="Next Question"
+                        Click="Next_Click"
+                        IsEnabled="{Binding CanNext}" />
+                <Button Content="Very Easy — Reduce Frequency"
+                        Click="VeryEasy_Click"
+                        IsVisible="{Binding ShowVeryEasy}" />
+            </StackPanel>
+
+            <!-- Feedback -->
+            <TextBlock Text="{Binding Feedback}"
+                       TextWrapping="Wrap"
+                       FontSize="14" />
+
+        </StackPanel>
+    </DockPanel>
+</Window>
