@@ -134,7 +134,7 @@ Japanese, Romanji, English
 私も水泳が好きです, Watashi mo suiei ga suki desu, I like swimming too
 これは何ですか, Kore wa nan desu ka, what is this
 どうして好きじゃないんですか, Dōshite suki janai n desu ka, Why don't <you> like it
-美味しい, oshii, (tasty; delicious)
+美味しい, oishii, (tasty; delicious)
 先生, sensei, (teacher; master)
 可愛い, kawaii, (cute; lovable)
 美しい, utsukushī, beautiful
