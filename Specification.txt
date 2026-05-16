@@ -4,7 +4,7 @@ The purpose of the GUI is to test the users knowledge of a specific set of words
 The input file should generally be formatted in semi-csv format:
 
 The first line would be: <other language>, <pronunciation format/language>, <user's language>
-This would allow for its usage in the 
+This would allow for better questions and avoid mixing mappings of different languages.
 
 The rest of the lines would be: <other language word/phrase>, <other language pronunciation word/phrase>, <users language word/phrase>
 If there are multiple meanings etc. then they should be surrounded by () and separated by ;
