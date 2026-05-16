@@ -359,7 +359,7 @@ Nakunatta, nakunatta, (disappeared; run out; got lost; died)
 戻りたくない, modoritakunai, (I do not want to return; I don't want to go back)
 ぐらい, gurai, (approximately; about; to the extent that)
 分, fun, counter for minutes
-惜しい, oishii, (regrettable; disappointing; too good to waste; close)
+惜しい, oshii, (regrettable; disappointing; too good to waste; close)
 頃, goro, about <specific point in time>
 午後, gogo, (afternoon; PM)
 午前, gozen, (morning; AM)
