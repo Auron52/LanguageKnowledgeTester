@@ -2,17 +2,40 @@ using LanguageKnowledgeTester.Models;
 
 namespace LanguageKnowledgeTester.Services;
 
+public class ParseResult
+{
+    public List<Mapping> Mappings { get; init; } = [];
+    public string OtherLanguage { get; init; } = "Other Language";
+    public string PronunciationLanguage { get; init; } = "Pronunciation";
+    public string UserLanguage { get; init; } = "Your Language";
+}
+
 public class InputFileParser
 {
-    public List<Mapping> Parse(string filePath)
+    public ParseResult Parse(string filePath)
     {
         List<Mapping> mappings = new List<Mapping>();
+        string otherLanguage = "Other Language";
+        string pronunciationLanguage = "Pronunciation";
+        string userLanguage = "Your Language";
+        bool headerRead = false;
 
         foreach (var line in File.ReadLines(filePath))
         {
             string trimmed = line.Trim();
             if (string.IsNullOrWhiteSpace(trimmed))
             {
+                continue;
+            }
+
+            if (!headerRead)
+            {
+                // First non-empty line is the header: OtherLanguage, PronunciationLanguage, UserLanguage
+                string[] headerParts = trimmed.Split(',', 3);
+                if (headerParts.Length > 0) otherLanguage = headerParts[0].Trim();
+                if (headerParts.Length > 1) pronunciationLanguage = headerParts[1].Trim();
+                if (headerParts.Length > 2) userLanguage = headerParts[2].Trim();
+                headerRead = true;
                 continue;
             }
 
@@ -76,7 +99,13 @@ public class InputFileParser
             }
         }
 
-        return mappings;
+        return new ParseResult
+        {
+            Mappings = mappings,
+            OtherLanguage = otherLanguage,
+            PronunciationLanguage = pronunciationLanguage,
+            UserLanguage = userLanguage
+        };
     }
 
     // Splits a line on commas, respecting parentheses, into at most 3 parts.

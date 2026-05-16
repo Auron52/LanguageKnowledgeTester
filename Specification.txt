@@ -2,7 +2,11 @@ Create a C# (+ .NET MAUI / Avalonia?) GUI application with the intention to supp
 The purpose of the GUI is to test the users knowledge of a specific set of words or phrases in another language.
 
 The input file should generally be formatted in semi-csv format:
-<other language word/phrase>, <other language pronunciation word/phrase>, <users language word/phrase>
+
+The first line would be: <other language>, <pronunciation format/language>, <user's language>
+This would allow for its usage in the 
+
+The rest of the lines would be: <other language word/phrase>, <other language pronunciation word/phrase>, <users language word/phrase>
 If there are multiple meanings etc. then they should be surrounded by () and separated by ;
 Text in <> is used to give implied parts of the sentence or indicate additional information needed to work out the translation. When translating these it should not be necessary to specify.
 You can see a Japanese input example under Test/ExampleInputs/JapanesePhrases.txt (though it is possible this is not 100% correctly formatted) Pronunciation in this example is done using romanji, which emcompasses most of the required sounds.
@@ -25,6 +29,12 @@ f. User's language -> Pronunciation
 5. Allow the user to specify that the question was very easy for them after answering correctly and, if so, reduce the frequency significantly, (e.g. to 10% of the default) so it shows up very rarely. If they do this when the question is at 10% of the default the question should stop being asked at all. (frequency set to 0) Later we may add an option to rehash these when the user wants a refresher.
 6. Persist the mappings to disk in program database/storage, so the frequencies can be maintained.
 
+A couple example questions from JapanesePhrases.txt could be:
+
+What is 今晩 in Romanji? (the answer is konban)
+What is camera in Japanese? (the answer is カメラ)
+
+For now we can ignore the possibility that there may overlap in words with different meanings between the languages.
 
 A priority in this generation should be simplicity of the logic so it can be easily reviewed.
 

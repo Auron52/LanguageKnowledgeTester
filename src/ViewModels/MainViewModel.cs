@@ -55,7 +55,7 @@ public class MainViewModel : INotifyPropertyChanged
             {
                 return "All questions have been mastered!";
             }
-            return _currentQuestion.Prompt;
+            return FormatQuestion(_currentQuestion);
         }
     }
 
@@ -91,9 +91,8 @@ public class MainViewModel : INotifyPropertyChanged
 
     public void LoadInputFile(string filePath)
     {
-        var parser = new InputFileParser();
-        var parsed = parser.Parse(filePath);
-        _dbService.MergeFromParsed(_database, parsed);
+        var result = new InputFileParser().Parse(filePath);
+        _dbService.MergeFromParsed(_database, result);
         _dbService.Save(_database);
         NextQuestion();
     }
@@ -167,16 +166,28 @@ public class MainViewModel : INotifyPropertyChanged
 
     // --- Helpers ---
 
-    private static string DescribeType(MappingType type) => type switch
+    private string DescribeType(MappingType type) => type switch
     {
-        MappingType.OtherToUser          => "Other Language  →  Your Language",
-        MappingType.UserToOther          => "Your Language  →  Other Language",
-        MappingType.PronunciationToOther => "Pronunciation  →  Other Language",
-        MappingType.PronunciationToUser  => "Pronunciation  →  Your Language",
-        MappingType.OtherToPronunciation => "Other Language  →  Pronunciation",
-        MappingType.UserToPronunciation  => "Your Language  →  Pronunciation",
+        MappingType.OtherToUser          => $"{_database.OtherLanguage}  →  {_database.UserLanguage}",
+        MappingType.UserToOther          => $"{_database.UserLanguage}  →  {_database.OtherLanguage}",
+        MappingType.PronunciationToOther => $"{_database.PronunciationLanguage}  →  {_database.OtherLanguage}",
+        MappingType.PronunciationToUser  => $"{_database.PronunciationLanguage}  →  {_database.UserLanguage}",
+        MappingType.OtherToPronunciation => $"{_database.OtherLanguage}  →  {_database.PronunciationLanguage}",
+        MappingType.UserToPronunciation  => $"{_database.UserLanguage}  →  {_database.PronunciationLanguage}",
         _                                => ""
     };
+
+    private string FormatQuestion(Mapping mapping)
+    {
+        string target = mapping.Type switch
+        {
+            MappingType.OtherToUser or MappingType.PronunciationToUser   => _database.UserLanguage,
+            MappingType.UserToOther or MappingType.PronunciationToOther  => _database.OtherLanguage,
+            MappingType.OtherToPronunciation or MappingType.UserToPronunciation => _database.PronunciationLanguage,
+            _ => "?"
+        };
+        return $"What is {mapping.Prompt} in {target}?";
+    }
 
     private void Notify([CallerMemberName] string? name = null) =>
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
