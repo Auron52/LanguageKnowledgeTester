@@ -83,7 +83,15 @@ public class QuizService
         }
     }
 
-    // Strip <implied context>, collapse whitespace, lowercase for comparison.
-    private static string Normalize(string text) =>
-        Regex.Replace(text, @"<[^>]*>", "").Trim().ToLowerInvariant();
+    // Strip <implied context>, lowercase, then normalise macron vowels to their
+    // doubled equivalents so both forms are accepted (e.g. renshū = renshuu).
+    private static string Normalize(string text)
+    {
+        var s = Regex.Replace(text, @"<[^>]*>", "").Trim().ToLowerInvariant();
+        return s.Replace("ō", "ou")
+                .Replace("ū", "uu")
+                .Replace("ē", "ee")
+                .Replace("ā", "aa")
+                .Replace("ī", "ii");
+    }
 }
