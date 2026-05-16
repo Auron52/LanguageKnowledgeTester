@@ -33,11 +33,15 @@ public class DatabaseService
         File.WriteAllText(_dbPath, json);
     }
 
-    // Merges freshly parsed mappings into the existing database.
-    // Existing mappings keep their FrequencyMultiplier; new ones are added at default (1.0).
-    public void MergeFromParsed(Database existing, List<Mapping> parsed)
+    // Merges a parse result into the existing database.
+    // Language names are always updated; existing mapping frequencies are preserved.
+    public void MergeFromParsed(Database existing, ParseResult result)
     {
-        foreach (var incoming in parsed)
+        existing.OtherLanguage = result.OtherLanguage;
+        existing.PronunciationLanguage = result.PronunciationLanguage;
+        existing.UserLanguage = result.UserLanguage;
+
+        foreach (var incoming in result.Mappings)
         {
             var match = existing.Mappings.FirstOrDefault(m =>
                 m.Type == incoming.Type && m.Prompt == incoming.Prompt);
