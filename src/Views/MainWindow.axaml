@@ -22,15 +22,15 @@
         <StackPanel Margin="36,24,36,24" Spacing="14">
 
             <!-- Question type label -->
-            <TextBlock Text="{Binding QuestionTypeLabel}"
-                       FontSize="12"
-                       Opacity="0.55" />
+            <SelectableTextBlock Text="{Binding QuestionTypeLabel}"
+                                 FontSize="12"
+                                 Opacity="0.55" />
 
             <!-- Question prompt -->
-            <TextBlock Text="{Binding QuestionPrompt}"
-                       FontSize="28"
-                       FontWeight="SemiBold"
-                       TextWrapping="Wrap" />
+            <SelectableTextBlock Text="{Binding QuestionPrompt}"
+                                 FontSize="28"
+                                 FontWeight="SemiBold"
+                                 TextWrapping="Wrap" />
 
             <!-- Answer input -->
             <TextBox x:Name="AnswerBox"
@@ -53,9 +53,9 @@
             </StackPanel>
 
             <!-- Feedback -->
-            <TextBlock Text="{Binding Feedback}"
-                       TextWrapping="Wrap"
-                       FontSize="14" />
+            <SelectableTextBlock Text="{Binding Feedback}"
+                                 TextWrapping="Wrap"
+                                 FontSize="14" />
 
         </StackPanel>
     </DockPanel>
