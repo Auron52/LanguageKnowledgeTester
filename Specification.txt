@@ -35,6 +35,15 @@ What is 今晩 in Romanji? (the answer is konban)
 What is camera in Japanese? (the answer is カメラ)
 
 For now we can ignore the possibility that there may overlap in words with different meanings between the languages.
+However, the program should address switching to different languages. The solution could be:
+
+When the user selects a file with a new language combination.
+1. Keep separate files or sections of a database for each language combination.
+2. Write the database/storage for the previous language to disk.
+3. Clear the previous language information, so it isn't used when testing the new language.
+4. Load any existing database/storage information for the new language if any exists.
+5. Merge the mappings from the user's file as we do normally. 
+
 
 A priority in this generation should be simplicity of the logic so it can be easily reviewed.
 
