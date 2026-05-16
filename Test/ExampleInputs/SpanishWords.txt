@@ -1,0 +1,21 @@
+Spanish, Pronunciation, English
+hola, OH-lah, hello
+gracias, GRAH-see-as, thank you
+por favor, por fah-VOR, please
+sí, see, yes
+agua, AH-gwah, water
+casa, KAH-sah, (house; home)
+perro, PEH-roh, dog
+gato, GAH-toh, cat
+libro, LEE-broh, book
+comida, koh-MEE-dah, (food; meal)
+amigo, ah-MEE-goh, friend
+bueno, BWEH-noh, good
+malo, MAH-loh, bad
+grande, GRAHN-deh, (big; large; great)
+pequeño, peh-KEH-nyoh, (small; little)
+rojo, ROH-hoh, red
+azul, ah-SOOL, blue
+hablar, ah-BLAR, to speak
+comer, koh-MEHR, to eat
+ir, eer, to go
