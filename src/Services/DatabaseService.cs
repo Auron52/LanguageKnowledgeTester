@@ -10,9 +10,18 @@ public class DatabaseService
 
     public DatabaseService(string dbPath) => _dbPath = dbPath;
 
+    // Returns the database file path for a given language combination.
+    // Language names are sanitised so they can be used safely as a filename.
+    public static string GetPath(string appDataFolder, string other, string pronunciation, string user)
+    {
+        static string Sanitize(string s) =>
+            string.Concat(s.Select(c => Path.GetInvalidFileNameChars().Contains(c) ? '_' : c));
+        return Path.Combine(appDataFolder, $"{Sanitize(other)}-{Sanitize(pronunciation)}-{Sanitize(user)}.json");
+    }
+
     public Database Load()
     {
-        if (!File.Exists(_dbPath))
+        if (string.IsNullOrEmpty(_dbPath) || !File.Exists(_dbPath))
         {
             return new Database();
         }
@@ -29,6 +38,10 @@ public class DatabaseService
 
     public void Save(Database db)
     {
+        if (string.IsNullOrEmpty(_dbPath))
+        {
+            return;
+        }
         var json = JsonSerializer.Serialize(db, JsonOptions);
         File.WriteAllText(_dbPath, json);
     }

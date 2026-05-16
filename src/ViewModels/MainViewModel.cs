@@ -7,9 +7,11 @@ namespace LanguageKnowledgeTester.ViewModels;
 
 public class MainViewModel : INotifyPropertyChanged
 {
-    private readonly DatabaseService _dbService;
+    private DatabaseService _dbService;
     private readonly QuizService _quizService;
-    private readonly Database _database;
+    private Database _database;
+    private readonly string _appDataFolder;
+    private string _currentDbPath;
 
     private Mapping? _currentQuestion;
     private string _userAnswer = "";
@@ -22,13 +24,18 @@ public class MainViewModel : INotifyPropertyChanged
 
     public MainViewModel()
     {
-        var appData = Path.Combine(
+        _appDataFolder = Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
             "LanguageKnowledgeTester");
-        Directory.CreateDirectory(appData);
-
-        _dbService = new DatabaseService(Path.Combine(appData, "database.json"));
+        Directory.CreateDirectory(_appDataFolder);
         _quizService = new QuizService();
+
+        // Auto-load the most recently used language database if one exists.
+        _currentDbPath = Directory.GetFiles(_appDataFolder, "*.json")
+                                  .OrderByDescending(File.GetLastWriteTime)
+                                  .FirstOrDefault() ?? string.Empty;
+
+        _dbService = new DatabaseService(_currentDbPath);
         _database = _dbService.Load();
 
         if (_database.Mappings.Count > 0)
@@ -92,6 +99,17 @@ public class MainViewModel : INotifyPropertyChanged
     public void LoadInputFile(string filePath)
     {
         var result = new InputFileParser().Parse(filePath);
+        var newPath = DatabaseService.GetPath(_appDataFolder, result.OtherLanguage, result.PronunciationLanguage, result.UserLanguage);
+
+        if (newPath != _currentDbPath)
+        {
+            // Different language combination: persist the current database and switch to the new one.
+            _dbService.Save(_database);
+            _currentDbPath = newPath;
+            _dbService = new DatabaseService(_currentDbPath);
+            _database = _dbService.Load();
+        }
+
         _dbService.MergeFromParsed(_database, result);
         _dbService.Save(_database);
         NextQuestion();
