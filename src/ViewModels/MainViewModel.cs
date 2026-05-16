@@ -30,6 +30,9 @@ public class MainViewModel : INotifyPropertyChanged
         _dbService = new DatabaseService(Path.Combine(appData, "database.json"));
         _quizService = new QuizService();
         _database = _dbService.Load();
+
+        if (_database.Mappings.Count > 0)
+            NextQuestion();
     }
 
     // --- Bindable properties ---
@@ -43,7 +46,7 @@ public class MainViewModel : INotifyPropertyChanged
         get
         {
             if (_database.Mappings.Count == 0)
-                return "Load an input file to begin.";
+                return "No questions have been loaded. Please select an input file to begin.";
             if (_currentQuestion == null)
                 return "All questions have been mastered!";
             return _currentQuestion.Prompt;
