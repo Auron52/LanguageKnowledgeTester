@@ -156,6 +156,7 @@ public class MainViewModel : INotifyPropertyChanged
         }
         else
         {
+            _quizService.RecordIncorrect(_currentQuestion);
             var expected = string.Join("  /  ", _currentQuestion.Answers);
             Feedback = $"Incorrect. Correct answer(s): {expected}";
             ShowVeryEasy = false;
