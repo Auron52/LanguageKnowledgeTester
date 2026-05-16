@@ -69,6 +69,17 @@ public class QuizService
             MinFrequency);
     }
 
+    // Increase frequency by one step on each wrong answer, up to the default maximum.
+    public void RecordIncorrect(Mapping mapping)
+    {
+        if (mapping.FrequencyMultiplier < 1.0)
+        {
+            mapping.FrequencyMultiplier = Math.Min(
+                Math.Round(mapping.FrequencyMultiplier + FrequencyStepDown, 10),
+                1.0);
+        }
+    }
+
     // At minimum frequency: disable the question entirely.
     // Otherwise: drop straight to the minimum so it shows up very rarely.
     public void RecordVeryEasy(Mapping mapping)
