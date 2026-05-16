@@ -19,7 +19,6 @@ Japanese, Romanji, English
 真似して, Maneshite, (imitating; copying; impersonating)
 知らないよ, Shiranai yo, (I don't know; I have no idea)
 どこ, Doko, where
-<Name> wa ogenki desu ka?, 
 初めまして, Hajimemashite, Nice to meet you    
 お箸, ohashi, chopsticks
 よく　できました。, Yoku dekimashita, Well done
@@ -47,7 +46,7 @@ Japanese, Romanji, English
 北アメリカ, Kita Amerika, North America
 オーストララシア, Ōsutorarashia, Australasia
 南アメリカ, Minami Amerika, South America
-イギリス, igirisu, (England, UK)
+イギリス, igirisu, (England; UK)
 スペイン, supein, spain
 フランス, furansu, france
 台湾, taiwan, taiwan
@@ -103,9 +102,9 @@ Japanese, Romanji, English
 から, kara, from
 来ました, kimashita, (came; came from)
 カナダから来ました, kanada kara kimashita, (I am from Canada; I came from Canada)
-カナダ人, kanada-jin, (Canadian, Canadian-person)
+カナダ人, kanada-jin, (Canadian; Canadian-person)
 どこから来ましたか, Doko kara kimashita ka, Where are you from
-何人ですか, nani-jin desu ka, (what nationality are you, what is your nationality)
+何人ですか, nani-jin desu ka, (what nationality are you; what is your nationality)
 準備はいいですか, junbi wa ii desu ka, (Are you ready; Are ready)
 来ます, kimasu, (come; arrive)
 イングランド, ingurando, england
@@ -116,7 +115,7 @@ Japanese, Romanji, English
 料理, Ryōri, cooking <noun>
 どうして, Dōshite, why
 下手, heta, bad at
-聞いて, Kīte, (listen, hear, ask)
+聞いて, Kīte, (listen; hear; ask)
 泳ぎます, oyogimasu, swimming <verb>
 サッカー, sakkā, soccer
 買い物, kaimono, shopping <verb>
@@ -131,13 +130,13 @@ Japanese, Romanji, English
 どうして好きじゃないんですか, Dōshite suki janai n desu ka, Why don't <you> like it
 聞いてみましょう, Kīte mimashō, Let’s try listening
 趣味は何ですか, shumi wa nan desu ka, What are <your> hobbies
-料理が好きですか, Ryōri ga suki desu ka, Do <you> like cooking?
+料理が好きですか, Ryōri ga suki desu ka, Do <you> like cooking
 私も水泳が好きです, Watashi mo suiei ga suki desu, I like swimming too
 これは何ですか, Kore wa nan desu ka, what is this
 どうして好きじゃないんですか, Dōshite suki janai n desu ka, Why don't <you> like it
 美味しい, oshii, (tasty; delicious)
-先生, sensei, (teacher, master)
-可愛い, kawaii, (cute, lovable)
+先生, sensei, (teacher; master)
+可愛い, kawaii, (cute; lovable)
 美しい, utsukushī, beautiful
 学生, gakusei, student
 猫, neko, cat
@@ -155,7 +154,7 @@ Japanese, Romanji, English
 面白い, omoshiroi, (interesting; funny)
 日本語, nihongo, Japanese <language>
 お父さん, otōsan, dad
-頂きます, itadakimasu, (let's eat;qqq I humbly receive)
+頂きます, itadakimasu, (let's eat; I humbly receive)
 御馳走様でした!, gochisōsama deshita!, Thank you for the meal!
 誰, dare, who
 優しい, yasashī, kind
@@ -213,7 +212,7 @@ Japanese, Romanji, English
 涼しい, suzushī, (cool <temperature>; refreshing)
 差す, sasu, to put up <an umbrella>
 貸す, kasu, to lend
-風邪, kaze, cold <sickness>, flu
+風邪, kaze, (cold <sickness>; flu)
 そう, sō, (that's right; really)
 家族, kazoku, family
 明日, ashita, tomorrow
@@ -227,12 +226,12 @@ Japanese, Romanji, English
 雑誌, zasshi, magazine
 手, te, hand
 素敵, suteki, (lovely; wonderful)
-縦, tate, (height; length)
+縦, tate, (vertical; length; height <as opposed to width>)
 出口, deguchi, <an> exit
-後, ato, (after, later)
+後, ato, (after; later)
 時々, tokidoki, sometimes
 負けたくない), maketakunai, (I don't want to lose; I won't lose)
-選手, senshu, athlete, player
+選手, senshu, (athlete; player)
 勉強しています, Benkyou shite imasu, (I am studying; I have been studying)
 (一ヶ月;１ヶ月), ikkagetsu, 1 month
 間, kan, (suffix for periods of time; interval; between)
@@ -243,16 +242,16 @@ Japanese, Romanji, English
 好きな飲み物, suki na nomimono, the drink <I> like
 好きな食べ物, suki na tabemono, the food <I> like
 本はあります, hon wa arimasu, <I> have a book
-います, imasu, (have; there is; exist) <animate>
+います, imasu, (have <animate>; there is <animate>; exist <animate>)
 犬, inu, dog
 いくらですか, ikura desu ka, how much is it
 お釣り, otsuri, change
-はい、コーヒーとお茶があります, Hai, kōhī to ocha ga arimasu, Yes, <we> have coffee and green tea
+はい、コーヒーとお茶があります, (Hai, kōhī to ocha ga arimasu), (Yes, <we> have coffee and green tea)
 お茶, ocha, tea
 魚, sakana, fish
 二, ni, two
 子犬, koinu, puppy
-もうさあ, mou saa, (Enough already; Seriously; Come on) <frustration>
+もうさあ, mou saa, (Enough already <frustration>; Seriously <frustration>; Come on <frustration>)
 壁ドン, kabedon, wall slam
 図書館, toshokan, library
 映画館, eigakan, movie theater
@@ -276,7 +275,7 @@ Japanese, Romanji, English
 奈良, nara, nara
 十一, juuichi, (eleven; 11)
 奈良はどうやって行きますか, Nara wa dōyatte ikimasu ka, How do <I> get to Nara
-どうやって, dōyatte, (how, in what way; by what means)
+どうやって, dōyatte, (how; in what way; by what means)
 電車, densha, train
 遠い, tōi, far
 京都駅, Kyōto-eki, Kyoto Station
@@ -293,15 +292,15 @@ Japanese, Romanji, English
 発音, hatsuon, pronunciation
 まだいいよ, mada ii yo, (Not yet; it's not needed yet; it's fine) 
 運命, unmei, (fate; destiny)
-開けます/あけます, akemasu, (to open; to open for business)
+開けます, akemasu, (to open; to open for business)
 どっち, docchi, (which way <choosing between two directions>; which one <choosing between two options> ) 
-太陽/たいよう, taiyo, sun
+太陽, taiyo, sun
 逃げる, nigeru, (to escape; to run away; to flee; to avoid)
 溺れない, oborenai, (will not sink; do not drown; not get addicted)
 大きい, ookii, (big; large; loud)
 いいね, ii ne, (sounds good; that's nice; good idea; good, isn't it)
 めちゃくちゃ, mechakucha, (absurd; reckless; chaotic)
-大事だから, daiji dakara, (because it is important; so therefore it is important
+大事だから, daiji dakara, (because it is important; so therefore it is important)
 向きじゃない, muki ja nai, (not suitable for; not meant for; not intended for)
 溺れる, oboreru, (to drown; to sink; to struggle in water)
 なんか, nanka, (somehow; kind of; like)
@@ -312,7 +311,7 @@ Japanese, Romanji, English
 今, ima, (now; the present time; just now)
 戻ります, modorimasu, (to return; to go back; to turn back)
 Nakunatta, nakunatta, (disappeared; run out; got lost; died)
-生きた, ikita, (lived, alive, living)
+生きた, ikita, (lived; alive; living)
 逃げろ, nigero, run away
 来ないで, konaide, (don't come; don't approach; keep away)
 仕舞った, shimatta, (damn it; shoot; oops)
@@ -323,7 +322,7 @@ Nakunatta, nakunatta, (disappeared; run out; got lost; died)
 一つ, hitotsu, <native japanese number> one
 三つ, mittsu, (native Japanese number) three
 でかい, dekai, (huge; giant; enormous; massive)
-カサカサ, kasa kasa, (rustling sound, rough texture)
+カサカサ, kasa kasa, (rustling sound; rough texture)
 足りない, tarinai, (insufficient; not enough; lacking)
 速い, hayai, (fast; quick)
 翔んでる, tonderu, (fly; soar)
@@ -360,7 +359,7 @@ Nakunatta, nakunatta, (disappeared; run out; got lost; died)
 戻りたくない, modoritakunai, (I do not want to return; I don't want to go back)
 ぐらい, gurai, (approximately; about; to the extent that)
 分, fun, counter for minutes
-惜しい, oshii, (regrettable; disappointing; too good to waste; close)
+惜しい, oishii, (regrettable; disappointing; too good to waste; close)
 頃, goro, about <specific point in time>
 午後, gogo, (afternoon; PM)
 午前, gozen, (morning; AM)
@@ -377,7 +376,7 @@ Nakunatta, nakunatta, (disappeared; run out; got lost; died)
 8分, happun, 8 minutes
 家から駅まで何分ですか, Ie kara eki made nan-pun desu ka, How many minutes is it from the house to the train station
 7分, nana-fun, seven minutes
-くらい, kurai, (approximately; about) <amounts of time, money, or distance>
+くらい, kurai, (approximately <amounts of time, money, or distance>; about <amounts of time, money, or distance>)
 4時, yo-ji, four o'clock
 走る, Hashiru, running
 おなら, onara, (fart; passing gas)
@@ -391,7 +390,7 @@ Nakunatta, nakunatta, (disappeared; run out; got lost; died)
 笑う, warau, (to laugh; lol; haha)
 出てくる, detekuru, (to come out; to appear; to emerge; to turn up)
 扉, tobira, (door; gate; opening)
-よいしょ, yoisho, (oof; heave-ho) <used when lifting heavy objects>
+よいしょ, yoisho, (oof <used when lifting heavy objects>; heave-ho <used when lifting heavy objects>)
 面倒くさい, mendokusai, (bothersome; troublesome; a pain)
 きつい, kitsui, (tough; hard; tight; intense)
 きつかった, kitsukatta, (it was tough; it was hard; it was intense; it was severe)
@@ -408,7 +407,7 @@ Nakunatta, nakunatta, (disappeared; run out; got lost; died)
 なんだ今のは, Nanda ima no wa, (What was that; What was that just now)
 どこ見てんだよ, Doko mitendayo, (where are you looking; what are you looking at)
 落ち込んでる, ochikonderu, (I'm feeling down; I'm depressed; I'm feeling low)
-閉じ込め, tojikome, (to lock up, shut in, imprison)
+閉じ込め, tojikome, (to lock up; shut in; imprison)
 仲間, nakama, (comrade; close friend; colleague; teammate; companion)
 助かった, tasukatta, (to be helped; to survive; to be saved; to escape harm)
 ゴールテープ, gōrutēpu, (goal tape; finish line)
@@ -417,7 +416,7 @@ Nakunatta, nakunatta, (disappeared; run out; got lost; died)
 たたかい, tatakai, battle
 最悪, saiaku, (the worst; lowest; terrible)
 覚えました, oboemashita, (memorized; learned; remembered; committed to memory)
-分かった, wakatta, (understood; got it) <informal>
+分かった, wakatta, (understood <informal>; got it <informal>)
 鬼畜ゲー, kichiku gē, brutal game
 食べます, tabemasu, eat
 飲みます, nomimasu, drink
@@ -433,7 +432,7 @@ Nakunatta, nakunatta, (disappeared; run out; got lost; died)
 オレンジジュース, orenji-jūsu, orange juice
 野球, yakyū, baseball
 野球をします, Yakyū o shimasu, play baseball
-テレビ, terebi, (TV, television)
+テレビ, terebi, (TV; television)
 魚, sakana, fish
 愛情, aijou, (love; affection; tenderness)
 弾きます, hikimasu, play <a stringed or keyboard instrument>
