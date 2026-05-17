@@ -2,8 +2,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="LanguageKnowledgeTester.Views.MainWindow"
         Title="Language Knowledge Tester"
-        Width="720" Height="560"
-        MinWidth="520" MinHeight="440"
+        Width="720" Height="420"
+        MinWidth="520" MinHeight="320"
         KeyDown="Window_KeyDown">
 
     <DockPanel>
