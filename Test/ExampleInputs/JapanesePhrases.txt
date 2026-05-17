@@ -168,7 +168,7 @@ Japanese, Romanji, English
 青い, aoi, blue <colored>
 髪の毛, kaminoke, hair <on the head>
 長い, nagai, long
-お邪魔します, ojama shimasu, <I will disturb you; entering home>
+お邪魔します, ojama shimasu, (I will disturb you; entering home)
 失礼します, shitsurie shimasu, excuse me
 玄関, genkan, house entrance
 畳, tatami, tatami
