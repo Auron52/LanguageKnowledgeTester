@@ -71,7 +71,9 @@ public class MainViewModel : INotifyPropertyChanged
         get
         {
             if (_currentQuestion == null || _database.Mappings.Count == 0)
+            {
                 return "";
+            }
             string target = _currentQuestion.Type switch
             {
                 MappingType.OtherToUser or MappingType.PronunciationToUser        => _database.UserLanguage,
