@@ -27,10 +27,8 @@
                                  Opacity="0.55" />
 
             <!-- Question prompt -->
-            <SelectableTextBlock Text="{Binding QuestionPrompt}"
-                                 FontSize="28"
-                                 FontWeight="SemiBold"
-                                 TextWrapping="Wrap" />
+            <SelectableTextBlock FontSize="28"
+                                 TextWrapping="Wrap"><Run Text="{Binding QuestionPrefix}" /><Run Text="{Binding QuestionBold}" FontWeight="Bold" /><Run Text="{Binding QuestionSuffix}" /></SelectableTextBlock>
 
             <!-- Answer input -->
             <TextBox x:Name="AnswerBox"

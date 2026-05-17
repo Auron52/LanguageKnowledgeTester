@@ -50,19 +50,36 @@ public class MainViewModel : INotifyPropertyChanged
         ? DescribeType(_currentQuestion.Type)
         : "";
 
-    public string QuestionPrompt
+    public string QuestionPrefix
     {
         get
         {
             if (_database.Mappings.Count == 0)
-            {
                 return "No questions have been loaded. Please select an input file to begin.";
-            }
             if (_currentQuestion == null)
-            {
                 return "All questions have been mastered!";
-            }
-            return FormatQuestion(_currentQuestion);
+            return "What is ";
+        }
+    }
+
+    public string QuestionBold => (_currentQuestion != null && _database.Mappings.Count > 0)
+        ? _currentQuestion.Prompt
+        : "";
+
+    public string QuestionSuffix
+    {
+        get
+        {
+            if (_currentQuestion == null || _database.Mappings.Count == 0)
+                return "";
+            string target = _currentQuestion.Type switch
+            {
+                MappingType.OtherToUser or MappingType.PronunciationToUser        => _database.UserLanguage,
+                MappingType.UserToOther or MappingType.PronunciationToOther       => _database.OtherLanguage,
+                MappingType.OtherToPronunciation or MappingType.UserToPronunciation => _database.PronunciationLanguage,
+                _ => "?"
+            };
+            return $" in {target}?";
         }
     }
 
@@ -131,7 +148,9 @@ public class MainViewModel : INotifyPropertyChanged
         _lastAnswerWasCorrect = false;
         QuestionAnswered = false;
 
-        Notify(nameof(QuestionPrompt));
+        Notify(nameof(QuestionPrefix));
+        Notify(nameof(QuestionBold));
+        Notify(nameof(QuestionSuffix));
         Notify(nameof(QuestionTypeLabel));
         Notify(nameof(HasQuestion));
         Notify(nameof(CanSubmit));
@@ -195,18 +214,6 @@ public class MainViewModel : INotifyPropertyChanged
         MappingType.UserToPronunciation  => $"{_database.UserLanguage}  →  {_database.PronunciationLanguage}",
         _                                => ""
     };
-
-    private string FormatQuestion(Mapping mapping)
-    {
-        string target = mapping.Type switch
-        {
-            MappingType.OtherToUser or MappingType.PronunciationToUser   => _database.UserLanguage,
-            MappingType.UserToOther or MappingType.PronunciationToOther  => _database.OtherLanguage,
-            MappingType.OtherToPronunciation or MappingType.UserToPronunciation => _database.PronunciationLanguage,
-            _ => "?"
-        };
-        return $"What is {mapping.Prompt} in {target}?";
-    }
 
     private void Notify([CallerMemberName] string? name = null) =>
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
