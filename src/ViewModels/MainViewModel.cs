@@ -14,6 +14,8 @@ public class MainViewModel : INotifyPropertyChanged
     private string _currentDbPath;
 
     private Mapping? _currentQuestion;
+    private Mapping? _pendingFollowUp;
+    private bool _isFollowUp;
     private string _userAnswer = "";
     private string _feedback = "";
     private bool _showVeryEasy;
@@ -58,7 +60,7 @@ public class MainViewModel : INotifyPropertyChanged
                 return "No questions have been loaded. Please select an input file to begin.";
             if (_currentQuestion == null)
                 return "All questions have been mastered!";
-            return "What is ";
+            return _isFollowUp ? "What else is " : "What is ";
         }
     }
 
@@ -131,17 +133,29 @@ public class MainViewModel : INotifyPropertyChanged
 
         _dbService.MergeFromParsed(_database, result);
         _dbService.Save(_database);
+        _pendingFollowUp = null;
+        _isFollowUp = false;
         NextQuestion();
     }
 
     public void NextQuestion()
     {
-        _currentQuestion = _quizService.SelectNextQuestion(_database);
-
-        if (_currentQuestion != null)
+        if (_pendingFollowUp != null)
         {
-            _quizService.RecordAsked(_database, _currentQuestion);
-            _dbService.Save(_database);
+            _currentQuestion = _pendingFollowUp;
+            _pendingFollowUp = null;
+            _isFollowUp = true;
+        }
+        else
+        {
+            _isFollowUp = false;
+            _currentQuestion = _quizService.SelectNextQuestion(_database);
+
+            if (_currentQuestion != null)
+            {
+                _quizService.RecordAsked(_database, _currentQuestion);
+                _dbService.Save(_database);
+            }
         }
 
         UserAnswer = "";
@@ -177,10 +191,25 @@ public class MainViewModel : INotifyPropertyChanged
         }
         else
         {
-            _quizService.RecordIncorrect(_currentQuestion);
-            var expected = string.Join("  /  ", _currentQuestion.Answers);
-            Feedback = $"Incorrect. Correct answer(s): {expected}";
-            ShowVeryEasy = false;
+            var alternate = _quizService.FindAlternateMapping(_database, _currentQuestion, UserAnswer);
+            if (alternate != null)
+            {
+                // User gave a valid answer for a different mapping with the same prompt.
+                // Record that mapping as correct and queue the original as a follow-up.
+                _pendingFollowUp = _currentQuestion;
+                _currentQuestion = alternate;
+                _quizService.RecordCorrect(alternate);
+                _lastAnswerWasCorrect = true;
+                Feedback = "Correct!";
+                ShowVeryEasy = true;
+            }
+            else
+            {
+                _quizService.RecordIncorrect(_currentQuestion);
+                var expected = string.Join("  /  ", _currentQuestion.Answers);
+                Feedback = $"Incorrect. Correct answer(s): {expected}";
+                ShowVeryEasy = false;
+            }
         }
 
         _dbService.Save(_database);
