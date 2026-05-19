@@ -61,6 +61,18 @@ public class QuizService
         return mapping.Answers.Any(a => Normalize(a) == normalized);
     }
 
+    // Returns another mapping with the same Type and Prompt whose answers match userAnswer,
+    // or null if none exists. Used to detect when the user gave a valid but unexpected answer.
+    public Mapping? FindAlternateMapping(Database db, Mapping current, string userAnswer)
+    {
+        var normalized = Normalize(userAnswer);
+        return db.Mappings.FirstOrDefault(m =>
+            m.Id != current.Id &&
+            m.Type == current.Type &&
+            m.Prompt == current.Prompt &&
+            m.Answers.Any(a => Normalize(a) == normalized));
+    }
+
     // Reduce frequency by one step on each correct answer, down to the minimum.
     public void RecordCorrect(Mapping mapping)
     {
