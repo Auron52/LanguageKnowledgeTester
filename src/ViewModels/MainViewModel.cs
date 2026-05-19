@@ -16,6 +16,7 @@ public class MainViewModel : INotifyPropertyChanged
     private Mapping? _currentQuestion;
     private Mapping? _pendingFollowUp;
     private bool _isFollowUp;
+    private readonly HashSet<Guid> _usedAlternateIds = new();
     private string _userAnswer = "";
     private string _feedback = "";
     private bool _showVeryEasy;
@@ -149,6 +150,7 @@ public class MainViewModel : INotifyPropertyChanged
         else
         {
             _isFollowUp = false;
+            _usedAlternateIds.Clear();
             _currentQuestion = _quizService.SelectNextQuestion(_database);
 
             if (_currentQuestion != null)
@@ -192,10 +194,18 @@ public class MainViewModel : INotifyPropertyChanged
         else
         {
             var alternate = _quizService.FindAlternateMapping(_database, _currentQuestion, UserAnswer);
-            if (alternate != null)
+            if (alternate != null && _usedAlternateIds.Contains(alternate.Id))
+            {
+                // User repeated an answer already given in this chain — refuse without penalty.
+                UserAnswer = "";
+                Feedback = "You've already given that answer — try a different one.";
+                return;
+            }
+            else if (alternate != null)
             {
                 // User gave a valid answer for a different mapping with the same prompt.
                 // Record that mapping as correct and queue the original as a follow-up.
+                _usedAlternateIds.Add(alternate.Id);
                 _pendingFollowUp = _currentQuestion;
                 _currentQuestion = alternate;
                 _quizService.RecordCorrect(alternate);
