@@ -36,6 +36,7 @@ Japanese, Romanji, English
 雨, ame, rain
 好き, suki, like
 少し, sukoshi, (a little; a bit)
+ちょっと, chotto, (a little; a bit)
 北, kita, north
 南, minami, south
 東, higashi, east
