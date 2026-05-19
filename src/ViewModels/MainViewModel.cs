@@ -256,6 +256,8 @@ public class MainViewModel : INotifyPropertyChanged
         _                                => ""
     };
 
+    public void Flush() => _dbService.WaitForPendingSave();
+
     private void Notify([CallerMemberName] string? name = null) =>
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
 }

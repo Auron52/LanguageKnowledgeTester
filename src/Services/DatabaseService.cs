@@ -46,6 +46,13 @@ public class DatabaseService
         finally { _writeLock.Release(); }
     }
 
+    // Blocks until any in-flight QueueSave has finished writing. Call on app shutdown.
+    public void WaitForPendingSave()
+    {
+        _writeLock.Wait();
+        _writeLock.Release();
+    }
+
     // Serializes on the calling thread (consistent snapshot), then writes to disk on a
     // background thread. Use for frequent saves where blocking the UI is undesirable.
     public void QueueSave(Database db)

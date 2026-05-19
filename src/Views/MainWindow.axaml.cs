@@ -71,5 +71,11 @@ public partial class MainWindow : Window
         }
     }
 
+    protected override void OnClosing(Avalonia.Controls.WindowClosingEventArgs e)
+    {
+        _vm.Flush();
+        base.OnClosing(e);
+    }
+
     private void FocusAnswerBox() => AnswerBox.Focus();
 }
