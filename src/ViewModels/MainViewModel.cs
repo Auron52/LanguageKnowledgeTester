@@ -156,7 +156,7 @@ public class MainViewModel : INotifyPropertyChanged
             if (_currentQuestion != null)
             {
                 _quizService.RecordAsked(_database, _currentQuestion);
-                _dbService.Save(_database);
+                _dbService.QueueSave(_database);
             }
         }
 
@@ -222,7 +222,7 @@ public class MainViewModel : INotifyPropertyChanged
             }
         }
 
-        _dbService.Save(_database);
+        _dbService.QueueSave(_database);
         QuestionAnswered = true;
     }
 
@@ -235,7 +235,7 @@ public class MainViewModel : INotifyPropertyChanged
 
         bool wasAtMinimum = _currentQuestion.FrequencyMultiplier <= 0.1;
         _quizService.RecordVeryEasy(_currentQuestion);
-        _dbService.Save(_database);
+        _dbService.QueueSave(_database);
 
         ShowVeryEasy = false;
         Feedback = wasAtMinimum
@@ -255,6 +255,8 @@ public class MainViewModel : INotifyPropertyChanged
         MappingType.UserToPronunciation  => $"{_database.UserLanguage}  →  {_database.PronunciationLanguage}",
         _                                => ""
     };
+
+    public void Flush() => _dbService.WaitForPendingSave();
 
     private void Notify([CallerMemberName] string? name = null) =>
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));

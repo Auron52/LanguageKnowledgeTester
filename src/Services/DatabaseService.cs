@@ -7,6 +7,7 @@ public class DatabaseService
 {
     private readonly string _dbPath;
     private static readonly JsonSerializerOptions JsonOptions = new() { WriteIndented = false };
+    private readonly SemaphoreSlim _writeLock = new(1, 1);
 
     public DatabaseService(string dbPath) => _dbPath = dbPath;
 
@@ -38,12 +39,32 @@ public class DatabaseService
 
     public void Save(Database db)
     {
-        if (string.IsNullOrEmpty(_dbPath))
-        {
-            return;
-        }
+        if (string.IsNullOrEmpty(_dbPath)) return;
         var json = JsonSerializer.Serialize(db, JsonOptions);
-        File.WriteAllText(_dbPath, json);
+        _writeLock.Wait();
+        try { File.WriteAllText(_dbPath, json); }
+        finally { _writeLock.Release(); }
+    }
+
+    // Blocks until any in-flight QueueSave has finished writing. Call on app shutdown.
+    public void WaitForPendingSave()
+    {
+        _writeLock.Wait();
+        _writeLock.Release();
+    }
+
+    // Serializes on the calling thread (consistent snapshot), then writes to disk on a
+    // background thread. Use for frequent saves where blocking the UI is undesirable.
+    public void QueueSave(Database db)
+    {
+        if (string.IsNullOrEmpty(_dbPath)) return;
+        var json = JsonSerializer.Serialize(db, JsonOptions);
+        _ = Task.Run(async () =>
+        {
+            await _writeLock.WaitAsync();
+            try { await File.WriteAllTextAsync(_dbPath, json); }
+            finally { _writeLock.Release(); }
+        });
     }
 
     // Merges a parse result into the existing database.
