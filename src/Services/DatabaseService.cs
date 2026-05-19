@@ -54,6 +54,7 @@ public class DatabaseService
         existing.PronunciationLanguage = result.PronunciationLanguage;
         existing.UserLanguage = result.UserLanguage;
 
+        // Index existing mappings by (Type, Prompt, first answer) for O(1) lookup, avoiding O(n²) behaviour over large imports.
         var existingIndex = existing.Mappings
             .ToDictionary(m => (m.Type, m.Prompt, m.Answers.Count > 0 ? m.Answers[0] : ""));
 
