@@ -6,7 +6,7 @@ namespace LanguageKnowledgeTester.Services;
 public class DatabaseService
 {
     private readonly string _dbPath;
-    private static readonly JsonSerializerOptions JsonOptions = new() { WriteIndented = true };
+    private static readonly JsonSerializerOptions JsonOptions = new() { WriteIndented = false };
 
     public DatabaseService(string dbPath) => _dbPath = dbPath;
 
@@ -54,24 +54,20 @@ public class DatabaseService
         existing.PronunciationLanguage = result.PronunciationLanguage;
         existing.UserLanguage = result.UserLanguage;
 
+        var existingIndex = existing.Mappings
+            .ToDictionary(m => (m.Type, m.Prompt, m.Answers.Count > 0 ? m.Answers[0] : ""));
+
         foreach (var incoming in result.Mappings)
         {
-            // Match on Type + Prompt + first answer so that two mappings with the same
-            // prompt but different answers (e.g. two words sharing the same English meaning)
-            // are treated as distinct entries rather than collapsing into one.
-            var match = existing.Mappings.FirstOrDefault(m =>
-                m.Type == incoming.Type &&
-                m.Prompt == incoming.Prompt &&
-                m.Answers.Count > 0 && incoming.Answers.Count > 0 &&
-                m.Answers[0] == incoming.Answers[0]);
-
-            if (match != null)
+            var incomingKey = (incoming.Type, incoming.Prompt, incoming.Answers.Count > 0 ? incoming.Answers[0] : "");
+            if (existingIndex.TryGetValue(incomingKey, out var match))
             {
                 match.Answers = incoming.Answers; // refresh answers, preserve frequency
             }
             else
             {
                 existing.Mappings.Add(incoming);
+                existingIndex[incomingKey] = incoming;
             }
         }
     }
